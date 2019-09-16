@@ -1,4 +1,6 @@
 import os
 
-os.system("processing-java --force --sketch="+os.getcwd() +
-          "/generative --output="+os.getcwd()+"/generative/out --run")
+path = os.path.dirname(os.path.realpath(__file__))
+
+os.system("processing-java --force --sketch="+path +
+          " --output="+os.getcwd()+"/out --run")
